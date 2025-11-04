@@ -7,8 +7,8 @@
 - Gold: Star schema (DimCompany, DimCertificate, FactCompanyCertificate)
 
 **Star Schema:**
-- Fact: FactCompanyCertificate (9 records, grain: company-cert-facility)
-- Dims: DimCompany (9), DimCertificate (6 standards)
+- Fact: FactCompanyCertificate 
+- Dims: DimCompany , DimCertificate 
 - Keys: Surrogate keys (DimCompanyKey, DimCertificateKey)
 - Metric: validity_duration_days = DATEDIFF(valid_from, valid_to)
 
@@ -40,4 +40,4 @@
 **Automation:** Daily pipeline check with alert on failures
 
 ---
-GitHub: [repo link]
+GitHub: https://github.com/ziatily2/commonshare
